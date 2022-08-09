@@ -1,0 +1,37 @@
+### Get all posts
+GET http://localhost:3000/api/posts
+X-API-Key: RAHASIA
+Accept: application/json
+
+### Create new category
+POST http://localhost:3000/api/posts
+X-API-Key: RAHASIA
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "Review Smartphone Samsung A80",
+  "category": "Smartphone",
+  "content": "This is Review about Samsung A80"
+}
+
+### Get category by Id
+GET http://localhost:3000/api/posts/2
+X-API-Key: RAHASIA
+Accept: application/json
+
+### Update category by id
+PUT http://localhost:3000/api/posts/2
+X-API-Key: RAHASIA
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "Review Smartphone Samsung S21 Ultra",
+  "category": "Smartphone",
+  "content": "This is Review about Samsung S21 Ultra"
+}
+### Delete category by id
+DELETE http://localhost:3000/api/posts/2
+X-API-Key: RAHASIA
+Accept: application/json
